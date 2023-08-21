@@ -1,21 +1,25 @@
 # SNHU_CS_305_Software_Security
 
 # Briefly summarize your client, Artemis Financial, and their software requirements. Who was the client? What issue did they want you to address?
-
+The client, Artemis Financial, is a financial consulting company that provides financial service plans for their prospective customers. The issues that they wanted me to address was directly related to the security of their software application. The areas of security they were concerned with were adhering to local and federal regulations for encrypting data in transit, utilizing secure communication channels, ensuring data integrity, preventing malicious attackers a vector for attack with input validation and error handling, and reducing their attack surface from vulnerable application dependencies. 
 
 # What did you do very well when you found your client’s software security vulnerabilities? Why is it important to code securely? What value does software security add to a company’s overall wellbeing?
-
+What I did well when I found my clients software security vulnerabilities was reporting the vulnerabilities,  formulating a mitigation plan, and enacting the necessary changes to remove the vulnerabilities. 
+It is important to abide by secure coding principles when writing applications because it reduces the attack surface of the software and helps create a much healthier and functional application. Without secure coding, the application is at a much greater risk of compromise from malicious attackers and compromising company/customer data. 
+Secure coding provides a layer of software security to a company’s infrastructure that greatly increases the overall wellbeing of the company in many forms.  First, it increases customer trust as it demonstrates the company is in control of their data and values the integrity of the data trusted to them. It prevents, or vastly reduces, the cost of security breaches because once a breach happens the cost associated with responding, fixing, and preventing that breach is enormous. Finally, in the same vein as the previously mentioned example, software security reduces company resources from responding to security breaches and allows them to focus on new projects to contribute to company growth. 
 
 # What part of the vulnerability assessment was challenging or helpful to you?
-
+The most challenging part of the vulnerability assessment for me was determining which vulnerabilities found in the OWASP dependency-check tool were false positives. The amount of vulnerabilities that the OWASP dependency-check tool found in the application was rather large, and sifting through these vulnerabilities to determine which were false-positives and which were of high concern was initially overwhelming, but I found it very helpful and a valuable learning experience. The most helpful aspect of the vulnerability assessment was learning how to use the OWASP dependency-check tool and looking at an application with security in mind.  
 
 # How did you increase layers of security? In the future, what would you use to assess vulnerabilities and decide which mitigation techniques to use?
-
+The way I increased the layers of security for the application was ensuring that the application utilized secure communication channels with HTTPS, employed error handling, generated and used a self-signed certificate, addressed vulnerabilities with the OWASP dependency-check tool, ensured all dependencies were up to date, and generated a checksum with the SHA-512 hashing algorithm so customers were certain they received unmodified data from the original source. 
+In the future, I will employ my knowledge of best practices for software security principles and continue to utilize the OWASP dependency-check tool. Mitigation techniques will follow best practices for secure coding and software security principles such as input validation, error handling, encryption, secure API interactions, secure data structures, secure coding patterns, writing quality code, and addressing any vulnerabilities found with information from reliable source such as the NVD and CVE MITRE. 
 
 # How did you make certain the code and software application were functional and secure? After refactoring the code, how did you check to see whether you introduced new vulnerabilities?
-
+I made certain that my code and software application was functional and secure by ensuring that my application met user requirements, functioned as intended providing the correct output, followed software security best practices, and conducted an initial vulnerability check using the OWASP dependency-check tool. After I refactored the code, I conducted a second follow up vulnerability assessment using the OWASP dependency-check tool to ensure that I did not introduce any new vulnerabilities.
 
 # What resources, tools, or coding practices did you use that might be helpful in future assignments or tasks?
-
+The tools I used that will be helpful in future assignments was the OWASP dependency-check tool for vulnerability assessment and the Java keytool tool to generate a self-signed certificate. Important coding practices that I used that will be helpful in future assignments were error handling, the Java MessageDigest class for implementing a hashing algorithm to generate a checksum, and the byteToHex function. Finally, resources I used that will be helpful for future assignments was the NVD database and the CVE MITRE database on known and exploited vulnerabilities. 
 
 # Employers sometimes ask for examples of work that you have successfully completed to show your skills, knowledge, and experience. What might you show future employers from this assignment?
+The skills, knowledge, and experience I may show future employers from this assignment is my use of the OWASP dependency-check tool to assess an application for known vulnerabilities, my use of secure coding patterns and hashing algorithms, generating self-signed certificates with the JAVA keytool tool, and my ability to employ secure communication channels.  The most important knowledge I can convey to a future employer is my ability to assess an application for security vulnerabilities, and once identified, employ mitigation techniques to strengthen the application ensure proper security principles are followed.  
